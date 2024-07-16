@@ -9,7 +9,7 @@ function App() {
       <Route path="/login" element={<Login/>}/>
       {/* <Route path="/dashboard/*" element={<Dashboard />} /> */}
       <Route path="/auth/*" element={<Auth />} />
-      <Route path="*" element={<Navigate to="/dashboard/farmers" replace />} />
+      <Route path="*" element={<Navigate to="/login" replace />} />
       <Route element={<ProtectedRoute/>}>
         <Route exact path="/dashboard/*" element={<Dashboard />}/>
       </Route>
